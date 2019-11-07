@@ -1,6 +1,6 @@
 {
-  "name": "npm-starter",
-  "version": "1.0.0",
+  "name": "npm-test-starter-milosz",
+  "version": "2.0.2",
   "description": "a simple test",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "test"
   ],
   "author": "Milosz Hygen <miloszhygen@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "npm-test-starter-milosz": "index.js"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "shelljs": "^0.8.3"
+  }
 }
-
-
