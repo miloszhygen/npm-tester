@@ -1,5 +1,3 @@
-Main project - `npm-test-starter-milosz`
-
 
 # TODO
 - github page
@@ -10,11 +8,9 @@ Main project - `npm-test-starter-milosz`
     - next
     - next+sanity
 
-
 - check node version
   - if not - show what to do
       - or do it?
-
 
 - storybook https://storybook.js.org/docs/guides/quick-start-guide/
 
@@ -26,9 +22,11 @@ Main project - `npm-test-starter-milosz`
 
 
 # What happens when running the app
+- check node version
+  - help if wrong number
 - folder name
 - select type
-  - default client app
+  - default cra
   - sanity
   - next
   - next+sanity
@@ -41,6 +39,8 @@ Main project - `npm-test-starter-milosz`
 
 - run create-react-app / or based on type
 - install template based on selected type
+  - primitives
+  - helpers/util
 - clean up after cra - remove yarn.lock file
 - run storybook setup
 - install tests + husky
@@ -57,6 +57,25 @@ Main project - `npm-test-starter-milosz`
   - remember to initiate git
   - talk to a designer / UX
 
+
+
+
+
+
+
+# Start
+
+Main project - `npm-test-starter-milosz`
+
+### Running the script
+
+`node index.js`
+
+### Publish to npm
+
+1. update package.json version
+2. `npm release major | minor | patch`
+3. run `npm publish`
 
 
 # Documentation
@@ -76,6 +95,7 @@ Main project - `npm-test-starter-milosz`
 
 [Terminal select from list](https://alligator.io/nodejs/interactive-command-line-prompts/)
 
+
 # NPM
 
 For the lazy one here is a bunch of videos on how to publish to npm [npm videos](https://www.youtube.com/playlist?list=PLQso55XhxkgBMeiYmFEHzz1axDUBjTLC6)
@@ -90,6 +110,7 @@ For the lazy one here is a bunch of videos on how to publish to npm [npm videos]
 
 
 ## Creating a npm package
+
 [Creating a npm package.json](https://docs.npmjs.com/creating-a-package-json-file)
 To create a default package.json using information extracted from the current directory, use the npm init command with the --yes or -y flag. Initiate package.json `npm init --yes` or `npm init`
 
@@ -124,5 +145,5 @@ Create an `index.js` file with exports code
   }
 ```
 
-
+run `npm publish`
 
