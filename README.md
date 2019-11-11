@@ -8,6 +8,7 @@
     - next
     - next+sanity
 
+- add tests for the scripts, to make sure that all is there
 - check node version
   - if not - show what to do
       - or do it?
@@ -24,6 +25,12 @@
 # What happens when running the app
 - check node version
   - help if wrong number
+  - select installation options
+    - use nvm - link
+    - install yourself
+  - "this will install nvm" - link
+    - y/n?
+  - install correct node and set it
 - folder name
 - select type
   - default cra
