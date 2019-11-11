@@ -1,3 +1,14 @@
+# NEXT
+- make template project with
+  - cra
+  - stodybook
+  - tests
+  - primitives
+- finnish the build
+  - use the template that already exist
+- install storybook
+
+
 
 # TODO
 - github pages
@@ -20,6 +31,9 @@
 - primitives?
 - tailwind
 
+- remember to validate input
+  - foldername should have - or _
+
 
 
 
@@ -36,6 +50,7 @@
   - install correct node and set it
   -->
 - folder name
+  - remember to validate
 - select type
   - default react project
   - sanity

@@ -7,20 +7,7 @@ let templates = require('./templates/templates.js')
 let appName = process.argv[2]
 let appDirectory = `${process.cwd()}/${appName}`
 
-/*
-  - propt user for project name
 
-  - check node version
-    - if not - show what to do
-
-  - storybook https://storybook.js.org/docs/guides/quick-start-guide/
-
-  - tests
-  - primitives?
-  - tailwind
-
-
-*/
 
 
 const run = async () => {
