@@ -1,6 +1,7 @@
 
 # TODO
-- github page
+- github pages
+  - https://pages.github.com/
 - create the perfect template... do a create-react-app and make it awesome!
   - see the template folder
     - default client app
@@ -24,6 +25,8 @@
 
 # What happens when running the app
 - check node version
+- check if there is a newer version of the script (for those that has installed it globally)
+  <!--
   - help if wrong number
   - select installation options
     - use nvm - link
@@ -31,9 +34,10 @@
   - "this will install nvm" - link
     - y/n?
   - install correct node and set it
+  -->
 - folder name
 - select type
-  - default cra
+  - default react project
   - sanity
   - next
   - next+sanity
@@ -48,7 +52,7 @@
 - install template based on selected type
   - primitives
   - helpers/util
-- clean up after cra - remove yarn.lock file
+- clean up after cra - remove yarn.lock file etc.
 - run storybook setup
 - install tests + husky
 - config
