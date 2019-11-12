@@ -34,7 +34,7 @@
 - remember to validate input
   - foldername should have - or _
 
-
+- remove eject script from package.json
 
 
 # What happens when running the app
@@ -86,6 +86,16 @@
 
 
 
+
+# For article - how I made my first npm package/module
+- understand npm
+- create a dummy package
+- create a scaffolder script that runs cra
+- test script blocks
+  - moving files
+  - updateing files
+  - listen for user input
+- put things together
 
 
 
