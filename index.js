@@ -174,11 +174,6 @@ const updatePackageJson = async (folder) => {
   const data = JSON.stringify(json, null, 2)
 
   await writeFileSync(manifestFile, data)
-  /*
-    - add husky config
-    - remove eject script
-
-  */
 }
 
 
