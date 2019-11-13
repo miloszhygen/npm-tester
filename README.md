@@ -36,6 +36,10 @@
 
 - remove eject script from package.json
 
+- publish to npm
+  - bump version
+  - git tag
+  - publish to npm
 
 # What happens when running the app
 - check node version
