@@ -41,6 +41,8 @@
   - git tag
   - publish to npm
 
+- run git commit after all scaffolding is done to add latest changes to package json
+
 
 
 # What happens when running the app
@@ -130,12 +132,16 @@ Main project - `npm-test-starter-milosz`
 [An easy to understand scaffolding script](https://github.com/chrisjpatty/create-react-redux-router-app)
 
 [shelljs - terminal commands in node](https://github.com/shelljs/shelljs)
+[shelljs cheatsheet](https://devhints.io/shelljs)
 
 [Terminal animations](https://github.com/sindresorhus/ora)
 
 [Node temrinal prompt](https://nodejs.org/api/readline.html)
 
 [Terminal select from list](https://alligator.io/nodejs/interactive-command-line-prompts/)
+
+[Run create react test once](https://stackoverflow.com/questions/39724017/running-cra-jest-in-non-interactive-mode)
+
 
 
 # NPM

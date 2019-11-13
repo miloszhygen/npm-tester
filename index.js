@@ -43,7 +43,8 @@ const run = async () => {
   }
 
   await installDepencensies(folderName)
-  await updatePackageJson(folderName)
+  await updatePackageJson()
+  await runGitCommit()
 
 
 // TODO:
@@ -152,28 +153,35 @@ const installDepencensies = async (folder) => {
   }
 }
 
-const updatePackageJson = async (folder) => {
+const updatePackageJson = async () => {
   console.log('UPDATE PACKAGE JSON');
-  const manifestFile = path.resolve(__dirname, `${folder}/package.json`)
+  const manifestFile = path.resolve('package.json')
   const manifest = await readFileSync(manifestFile)
   const json = JSON.parse(manifest.toString())
 
   json.scripts =  {
     start: 'react-scripts start',
     build: 'react-scripts build',
-    test: 'react-scripts test'
+    "test:local": 'react-scripts test',
+    test: 'CI=true react-scripts test'
   }
-
 
   json.husky = {
     "hooks": {
-      "pre-push": "npm test"
+      "pre-push": "npm test",
     }
   }
 
   const data = JSON.stringify(json, null, 2)
 
   await writeFileSync(manifestFile, data)
+}
+
+const runGitCommit = async () => {
+  console.log('Commit changes to package');
+  await shell.exec('git add .')
+  await shell.exec('git commit -m "Added husky and test commands to package.json"')
+  console.log('Commit done');
 }
 
 
