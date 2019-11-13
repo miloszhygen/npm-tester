@@ -41,6 +41,8 @@
   - git tag
   - publish to npm
 
+
+
 # What happens when running the app
 - check node version
 - check if there is a newer version of the script (for those that has installed it globally)
