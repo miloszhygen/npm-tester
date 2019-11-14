@@ -1,6 +1,6 @@
 {
   "name": "npm-test-starter-milosz",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "description": "a simple test",
   "main": "index.js",
   "scripts": {
