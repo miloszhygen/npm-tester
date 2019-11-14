@@ -54,6 +54,7 @@ const releseToNpm = async () => {
   try {
     console.log(`Updating package.json version | ${version}`);
     console.log(`npm version ${version}`);
+    await shell.exec(`npm version ${version}`)
 
     console.log(`Updated pacakge from ${oldVersion} to ${package.version}`.blue);
 
@@ -61,7 +62,6 @@ const releseToNpm = async () => {
 
 
 
-    await shell.exec(`npm version ${version}`)
     // await shell.exec(`npm publish`)
 
 
