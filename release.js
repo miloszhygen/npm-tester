@@ -56,7 +56,7 @@ const releseToNpm = async () => {
     console.log(`npm version ${version}`);
     const success = await shell.exec(`npm version ${version}`)
 
-    console.log(success);
+    console.log(success.String);
     
     const package = require('./package.json');
     console.log(package.version);
