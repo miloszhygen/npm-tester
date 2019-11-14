@@ -70,13 +70,8 @@ const releseToNpm = async () => {
 
 
     console.log('Publish to npm');
-    
     await shell.exec(`npm publish`)
-
-    console.log('\nDONE'.cyan);
-    
-
-
+    console.log('\n**** DONE *** \n'.cyan);
 
   } catch (error) {
     console.log('Something went wrong - no great success!');
