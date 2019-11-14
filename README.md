@@ -1,3 +1,5 @@
+# This module is created for test purposes! The real thing is coming soon :) 
+
 # NEXT
 - github pages
 - create a release script that bumps version, creates a git tag and publish to npm
