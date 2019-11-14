@@ -52,24 +52,29 @@ const releseToNpm = async () => {
 
 
   try {
-    console.log(`Updating package.json version | ${version}`);
+    // console.log(`Updating package.json version | ${version}`);
     console.log(`npm version ${version}`);
-    const success = await shell.exec(`npm version ${version}`, (code) => {
-      console.log("Exited with code ", code)
-      const package = require('./package.json');
-      console.log(package.version);
-    })
-    // console.log(success);
-    
-    
+    await shell.exec(`npm version ${version}`)
+    console.log('Pushing new tag');
+    await shell.exec(`git push --tags`)
+
+    // console.log(success.);
+
+    // const package = require('./package.json');
+    // console.log(package.version);
+
 
     // console.log(`Updated pacakge from ${oldVersion} to ${package.version}`.blue);
 
     // console.log(`Release to script to npm with version ${package.version}`);
 
 
+    console.log('Publish to npm');
+    
+    await shell.exec(`npm publish`)
 
-    // await shell.exec(`npm publish`)
+    console.log('\nDONE'.cyan);
+    
 
 
 
