@@ -56,13 +56,17 @@ const releseToNpm = async () => {
     console.log(`npm version ${version}`);
     await shell.exec(`npm version ${version}`)
 
+    const package = require('./package.json');
+    console.log(package.version);
+    
+
     // console.log(`Updated pacakge from ${oldVersion} to ${package.version}`.blue);
 
     // console.log(`Release to script to npm with version ${package.version}`);
 
 
 
-    await shell.exec(`npm publish`)
+    // await shell.exec(`npm publish`)
 
 
 
