@@ -1,4 +1,6 @@
 # NEXT
+- github pages
+- create a release script that bumps version, creates a git tag and publish to npm
 - make template project with
   - cra
   - stodybook
@@ -33,15 +35,15 @@
 
 - remember to validate input
   - foldername should have - or _
-
-- remove eject script from package.json
+- add tests to the scaffold project - not the project that is scaffolded
+x remove eject script from package.json
 
 - publish to npm
   - bump version
   - git tag
   - publish to npm
 
-- run git commit after all scaffolding is done to add latest changes to package json
+x run git commit after all scaffolding is done to add latest changes to package json
 
 
 
