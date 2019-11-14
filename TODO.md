@@ -1,13 +1,10 @@
 # NEXT
 - github pages
 x create a release script that bumps version, creates a git tag and publish to npm
-- make template project with
-  - cra
-  - stodybook
-  - tests
-  - primitives
+
 - finnish the build
   - use the template that already exist
+
 - install storybook
   - https://github.com/netliferesearch/imdi-design-system
   - use the `template-netlife-storybook` project
@@ -16,12 +13,20 @@ x create a release script that bumps version, creates a git tag and publish to n
 # TODO
 - github pages
   - https://pages.github.com/
+
+- make template project with
+  - cra
+  - stodybook
+  - tests
+  - primitives
+
 - create the perfect template... do a create-react-app and make it awesome!
   - see the template folder
     - default client app
     - sanity
     - next
     - next+sanity
+
 
 - add tests for the scripts, to make sure that all is there
 - check node version
@@ -39,10 +44,10 @@ x create a release script that bumps version, creates a git tag and publish to n
 - add tests to the scaffold project - not the project that is scaffolded
 x remove eject script from package.json
 
-- publish to npm
-  - bump version
-  - git tag
-  - publish to npm
+x publish to npm
+  x bump version
+  x git tag
+  x publish to npm
 
 x run git commit after all scaffolding is done to add latest changes to package json
 
