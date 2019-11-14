@@ -1,6 +1,6 @@
 # NEXT
 - github pages
-- create a release script that bumps version, creates a git tag and publish to npm
+x create a release script that bumps version, creates a git tag and publish to npm
 - make template project with
   - cra
   - stodybook
