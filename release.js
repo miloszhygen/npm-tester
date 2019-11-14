@@ -5,7 +5,7 @@ let colors = require('colors')
 
 
 const package = require('./package.json')
-const oldVersion = package.version
+// const oldVersion = package.version
 // console.log(package);
 
 // Release script
@@ -56,13 +56,13 @@ const releseToNpm = async () => {
     console.log(`npm version ${version}`);
     await shell.exec(`npm version ${version}`)
 
-    console.log(`Updated pacakge from ${oldVersion} to ${package.version}`.blue);
+    // console.log(`Updated pacakge from ${oldVersion} to ${package.version}`.blue);
 
-    console.log(`Release to script to npm with version ${package.version}`);
+    // console.log(`Release to script to npm with version ${package.version}`);
 
 
 
-    // await shell.exec(`npm publish`)
+    await shell.exec(`npm publish`)
 
 
 
