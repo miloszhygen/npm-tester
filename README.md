@@ -1,4 +1,4 @@
-# This module is created for test purposes! The real thing is coming soon :) 
+# This module is created for test purposes! The real thing is coming soon :)
 
 # NEXT
 - github pages
