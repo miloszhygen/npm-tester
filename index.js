@@ -84,7 +84,7 @@ const selectProjectType = async () => {
         {
           type: 'list',
           name: 'projectType',
-          message: 'What type of project do you need?',
+          message: 'What type of project do you need? (use arrow keys)',
           choices: [
             CLEAN_CRA,
             NETLIFE_STARTER,
