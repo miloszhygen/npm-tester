@@ -61,7 +61,7 @@ const releseToNpm = async () => {
 
 
 
-    // await shell.exec(`npm version ${version}`)
+    await shell.exec(`npm version ${version}`)
     // await shell.exec(`npm publish`)
 
 
