@@ -59,6 +59,9 @@ x run git commit after all scaffolding is done to add latest changes to package 
   - what is used
   - link to docs
 
+- release script:
+  - check if person can do a release, otherwise show error message
+
 # What happens when running the app
 - check node version
 - check if there is a newer version of the script (for those that has installed it globally)

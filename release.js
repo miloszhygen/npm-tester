@@ -1,81 +1,65 @@
 #!/usr/bin/env node
+
+/*
+  # Release script
+
+  This script bumpes the package.json version and creates a tag, then pushes the tag.
+
+  When tagging is done the script does a npm releases
+
+  The script takes three version type argument [major | minor | patch] that updates the version accordingly
+
+  major: X.0.0
+  minor: 0.X.0
+  patch: 0.0.X
+
+  `node release.js major | minor | patch`
+
+  If no version type is provided, it does a patch release
+
+  USAGE:
+
+  `npm run deploy major | minor | patch`
+
+  ## DOCS:
+
+  ### Update package version
+  [npm update package version](https://docs.npmjs.com/updating-your-published-package-version-number)
+
+  ### Adding tag
+  [Docs on how to work with tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+  ### Releasing to npm
+  [Releasing to npm](https://docs.npmjs.com/creating-node-js-modules)
+
+
+*/
+
+
+
 let shell = require('shelljs');
-const path = require("path");
 let colors = require('colors')
-
-
-const package = require('./package.json')
-// const oldVersion = package.version
-// console.log(package);
-
-// Release script
-// npm deploy patch | minor | major-> release.js bumps etc
-// TODO:
-// 0. check who is logged in - if not allowed return
-// 1. bump version - see script for flex app
-// 2. git tag
-// 3. publish
-
-
-// THIS :::> https://docs.npmjs.com/updating-your-published-package-version-number
-
-
-// 1. update package.json version
-// 2. `npm release major | minor | patch`
-// 3. run `npm publish`
-
-
-
-//*****
-
-// npm version <update_type> -> also adds a tag to git
-// npm publish
+let spitt = require('./helpers/logger')
 
 
 const PATCH = 'patch';
-
-
-
 let versionType = process.argv[2]
-console.log(versionType);
 
 
-const releseToNpm = async () => {
-  // const manifestFile = path.resolve('package.json')
-  // const manifest = await readFileSync(manifestFile)
-  // const json = JSON.parse(manifest.toString())
-  // console.log(json);
-
-
+const releseToNpm = () => {
   const version = versionType ? versionType : PATCH;
+  // Doing a npm version also creates a tag
+  spitt('\n**** Intitiating release script ****\n'.cyan)
+  spitt(`npm version ${version}`)
+  shell.exec(`npm version ${version}`);
 
+  spitt('Pushing new tag');
+  shell.exec(`git push --tags`);
 
+  spitt('Publishing to npm');
+  shell.exec(`npm publish`);
 
-  try {
-    // console.log(`Updating package.json version | ${version}`);
-    console.log(`npm version ${version}`);
-    await shell.exec(`npm version ${version}`)
-    console.log('Pushing new tag');
-    await shell.exec(`git push --tags`)
-
-    // console.log(success.);
-
-    // const package = require('./package.json');
-    // console.log(package.version);
-
-
-    // console.log(`Updated pacakge from ${oldVersion} to ${package.version}`.blue);
-
-    // console.log(`Release to script to npm with version ${package.version}`);
-
-
-    console.log('Publish to npm');
-    await shell.exec(`npm publish`)
-    console.log('\n**** DONE *** \n'.cyan);
-
-  } catch (error) {
-    console.log('Something went wrong - no great success!');
-  }
+  spitt('\n**** DONE ***\n'.cyan);
 }
 
 
