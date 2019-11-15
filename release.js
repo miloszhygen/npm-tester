@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 /*
+
   # Release script
 
   This script bumpes the package.json version and creates a tag, then pushes the tag.
@@ -17,7 +18,7 @@
 
   If no version type is provided, it does a patch release
 
-  USAGE:
+  ## USAGE:
 
   `npm run deploy major | minor | patch`
 
@@ -31,7 +32,6 @@
 
   ### Releasing to npm
   [Releasing to npm](https://docs.npmjs.com/creating-node-js-modules)
-
 
 */
 
