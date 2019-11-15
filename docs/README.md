@@ -1,16 +1,18 @@
-# npm-test-starter-milosz
 
 <!-- IMAGE/GIF -->
-
 
 ## Running the script using npx (recommented)
 ```
 npx npm-test-starter-milosz
+
+# follow the instructions
 ```
 
 ## Installing the script globally
 ```
 npm -g npm-test-starter-milosz
+
+# follow the instructions
 ```
 
 ## How the script works
