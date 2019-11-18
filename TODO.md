@@ -1,6 +1,6 @@
 # NEXT
-- github pages
-  - update with awesome documentation
+x github pages
+  x update with awesome documentation
 
 x create a release script that bumps version, creates a git tag and publish to npm
 
@@ -12,6 +12,7 @@ x create a release script that bumps version, creates a git tag and publish to n
 
 - when scaffolding is done add:
   - link to githubpage AND github readme
+    - https://miloszhygen.github.io/npm-tester/
   - info on what is next and how to start the project
     - cd into folder
     - run XXx for app
