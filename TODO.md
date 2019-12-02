@@ -38,6 +38,7 @@ x github pages
     - next
     - next+sanity
 
+- figma and variables?
 
 - add tests for the scripts, to make sure that all is there
 - check node version
